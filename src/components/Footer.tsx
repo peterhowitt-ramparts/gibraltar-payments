@@ -1,8 +1,6 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
@@ -11,7 +9,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-xl">G</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg leading-tight">GEMPA</span>
+                <span className="font-bold text-lg leading-tight">GEMA</span>
                 <span className="text-xs text-primary-foreground/70 leading-tight">Gibraltar E-Money & Payments</span>
               </div>
             </div>
@@ -45,11 +43,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/70">Suite 23, Portland House, Gibraltar GX11 1AA</span>
+                <span className="text-primary-foreground/70">Suit</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent flex-shrink-0" />
-                <a href="mailto:info@gempa.gi" className="text-primary-foreground/70 hover:text-accent transition-colors">info@gempa.gi</a>
+                <a href="mailto:info@gempa.gi" className="text-primary-foreground/70 hover:text-accent transition-colors">info@gema.gi</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent flex-shrink-0" />
@@ -73,8 +71,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
