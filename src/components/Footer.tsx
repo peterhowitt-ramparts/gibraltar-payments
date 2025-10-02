@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              <li><a href="#about" className="text-primary-foreground/70 hover:text-accent transition-colors">About GEMPA</a></li>
+              <li><a href="#about" className="text-primary-foreground/70 hover:text-accent transition-colors">About GEMA</a></li>
               <li><a href="#advantages" className="text-primary-foreground/70 hover:text-accent transition-colors">Why Gibraltar</a></li>
               <li><a href="#members" className="text-primary-foreground/70 hover:text-accent transition-colors">Membership</a></li>
               <li><a href="#insights" className="text-primary-foreground/70 hover:text-accent transition-colors">Insights</a></li>

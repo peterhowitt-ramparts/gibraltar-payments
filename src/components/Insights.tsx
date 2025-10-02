@@ -19,7 +19,7 @@ const Insights = () => {
       category: "Member Spotlight",
       title: "Success Story: How Three Members Scaled Globally",
       date: "March 5, 2025",
-      excerpt: "Explore case studies of GEMPA members who leveraged Gibraltar's regulatory framework to expand internationally..."
+      excerpt: "Explore case studies of GEMA members who leveraged Gibraltar's regulatory framework to expand internationally..."
     }
   ];
 

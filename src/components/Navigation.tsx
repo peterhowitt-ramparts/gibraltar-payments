@@ -30,7 +30,7 @@ const Navigation = () => {
               Insights
             </a>
             <Button variant="default" className="bg-primary hover:bg-primary/90">
-              Join GEMPA
+              Join GEMA
             </Button>
           </div>
 
@@ -53,7 +53,7 @@ const Navigation = () => {
               Insights
             </a>
             <Button variant="default" className="w-full bg-primary hover:bg-primary/90">
-              Join GEMPA
+              Join GEMA
             </Button>
           </div>}
       </div>

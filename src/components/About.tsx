@@ -7,7 +7,7 @@ const About = () => {
   }, {
     icon: Users,
     title: "Industry Collaboration",
-    description: "GEMPA brings together leading fintech firms, payment processors, and e-money institutions to drive innovation."
+    description: "GEMA brings together leading fintech firms, payment processors, and e-money institutions to drive innovation."
   }, {
     icon: Globe,
     title: "Global Connectivity",
