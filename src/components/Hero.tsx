@@ -1,18 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin } from "lucide-react";
 import heroImage from "@/assets/gibraltar-hero.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 z-0" style={{
+      backgroundImage: `url(${heroImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
       </div>
 
@@ -34,40 +29,31 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6"
-            >
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6">
               Become a Member
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
-            >
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
               Discover Gibraltar
             </Button>
           </div>
 
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/20">
             <div>
-              <div className="text-4xl font-bold text-gold mb-2">250+</div>
-              <div className="text-white/80">Licensed Firms</div>
+              <div className="text-4xl font-bold text-gold mb-2">25+</div>
+              <div className="text-white/80">Licensed Banks, EMIs & DLT Firms</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-gold mb-2">£5B+</div>
-              <div className="text-white/80">Assets Under Management</div>
+              <div className="text-4xl font-bold text-gold mb-2">25%</div>
+              <div className="text-white/80">Financial Services impacGibraltar GDP</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-gold mb-2">30+</div>
-              <div className="text-white/80">Years Regulation</div>
+              <div className="text-4xl font-bold text-gold mb-2">50+</div>
+              <div className="text-white/80">Years of UK Market Access</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
