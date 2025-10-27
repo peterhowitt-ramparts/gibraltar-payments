@@ -1,22 +1,22 @@
-import { Building2 } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 const Members = () => {
-  const memberCategories = [{
-    title: "E-Money Institutions",
-    count: 45,
-    description: "Leading electronic money issuers"
-  }, {
-    title: "Payment Service Providers",
-    count: 38,
-    description: "Innovative payment processors"
-  }, {
-    title: "DLT Providers",
-    count: 27,
-    description: "Blockchain and crypto firms"
-  }, {
-    title: "Fintech Innovators",
-    count: 32,
-    description: "Emerging financial technology companies"
-  }];
+  const members = [
+    "Metropolitan Global Finance Limited",
+    "Pay Perform (Gibraltar) Limited",
+    "Ribbon plc",
+    "Spayex Technology Limited",
+    "Transact Payments Limited",
+    "Just Bank plc",
+    "Ramparts.gi"
+  ];
+
   return <section id="members" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -26,23 +26,32 @@ const Members = () => {
           <p className="text-xl text-muted-foreground leading-relaxed">GEMA represents a diverse community of licensed financial services firms, from established institutions to innovative startups shaping the future of payments.</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {memberCategories.map((category, index) => <div key={index} className="bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all hover:shadow-lg text-center animate-fade-in" style={{
-          animationDelay: `${index * 0.1}s`
-        }}>
-              <div className="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building2 className="h-8 w-8 text-primary" />
-              </div>
-              <div className="text-4xl font-bold text-primary mb-2">
-                {category.count}+
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">
-                {category.title}
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                {category.description}
-              </p>
-            </div>)}
+        <div className="mb-16 max-w-5xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {members.map((member, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-4">
+                    <div className="bg-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all hover:shadow-lg flex items-center justify-center h-32 animate-fade-in" style={{
+                      animationDelay: `${index * 0.05}s`
+                    }}>
+                      <h3 className="text-lg font-semibold text-foreground text-center">
+                        {member}
+                      </h3>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
 
         <div className="bg-card rounded-2xl p-12 border border-border">
