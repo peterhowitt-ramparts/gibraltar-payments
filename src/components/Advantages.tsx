@@ -6,16 +6,16 @@ const Advantages = () => {
     {
       category: "Regulatory Excellence",
       items: [
-        "Comprehensive DLT regulatory framework",
-        "E-money and Payment Services licensing",
+        "E-money and Payment Services licensing (including DLT regulatory framework)",
         "Crypto asset-friendly jurisdiction",
-        "Fast-track licensing procedures"
+        "Fast-track licensing procedures",
+        "Proactive regulatory engagement"
       ]
     },
     {
       category: "Business Environment",
       items: [
-        "Competitive tax regime (10% corporate tax)",
+        "Competitive tax regime (15% corporate tax)",
         "Access to skilled workforce",
         "English common law jurisdiction",
         "Political and economic stability"
@@ -33,10 +33,10 @@ const Advantages = () => {
     {
       category: "Innovation Support",
       items: [
-        "Proactive regulatory engagement",
         "Innovation-friendly legislation",
         "Fintech sandbox programs",
-        "Government backing for digital economy"
+        "Government backing for digital economy",
+        "Regulatory sandbox for testing"
       ]
     }
   ];
