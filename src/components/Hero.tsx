@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
             <div>
               <div className="text-4xl font-bold text-gold mb-2">25%</div>
-              <div className="text-white/80">Financial Services impacGibraltar GDP</div>
+              <div className="text-white/80">Financial Services as a % of Gibraltar GDP</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-gold mb-2">50+</div>
