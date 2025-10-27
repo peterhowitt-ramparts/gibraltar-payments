@@ -8,7 +8,7 @@ const Advantages = () => {
       items: [
         "E-money and Payment Services licensing (including DLT regulatory framework)",
         "Crypto asset-friendly jurisdiction",
-        "Fast-track licensing procedures",
+        "A regulatory environment that values relationships",
         "Proactive regulatory engagement"
       ]
     },
@@ -24,19 +24,17 @@ const Advantages = () => {
     {
       category: "Market Access",
       items: [
-        "Gateway to EU markets",
-        "Strong UK relationships post-Brexit",
+        "UK Market Access",
         "International banking connectivity",
-        "Passport rights across Europe"
+        "Strategic global positioning",
+        "Gateway to international markets"
       ]
     },
     {
       category: "Innovation Support",
       items: [
         "Innovation-friendly legislation",
-        "Fintech sandbox programs",
-        "Government backing for digital economy",
-        "Regulatory sandbox for testing"
+        "Government backing for digital economy"
       ]
     }
   ];
